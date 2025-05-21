@@ -3,6 +3,7 @@ from django.urls import path
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.views import LoginView
 from .views import logout_view
+from .views import contact_view
 from . import views
 
 
@@ -10,7 +11,7 @@ urlpatterns = [
     path("home/", views.home, name="home"),
     path("about/", views.about, name="about"),
     path("service/", views.service, name="about"),
-    path('contact/', views.contact, name='contact'),
+    path('contact/', contact_view, name='contact'),
 
     path('register/', views.register, name='register'),
     path('login/', LoginView.as_view(template_name='login.html'), name='login'),

@@ -108,3 +108,75 @@ p.mt-3 a {
 p.mt-3 a:hover {
   text-decoration: underline;
 }
+
+/* Contact page container */
+.container-cont {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #f9f9f9; /* light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-cont h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.container-cont form input[type="text"],
+.container-cont form input[type="email"],
+.container-cont form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.container-cont form input[type="text"]:focus,
+.container-cont form input[type="email"]:focus,
+.container-cont form textarea:focus {
+  border-color: #0d6efd; /* Bootstrap primary blue */
+  outline: none;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+.container-cont form button.btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #0d6efd;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.container-cont form button.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.alert-success {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+@media (max-width: 576px) {
+  .container-cont {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+}
