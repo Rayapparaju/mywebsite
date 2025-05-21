@@ -1,0 +1,85 @@
+{% extends "base.html" %} {% load static %} <br />
+{% block title %}Services{% endblock %} {% block content %}
+<div class="container py-5">
+  <h2 class="text-center mb-5">Our Services</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Service Card 1 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img
+          src="{% static 'image/web.jpg' %}"
+          class="card-img-top"
+          style="object-fit: cover; height: 200px"
+          alt="Service 1"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Web Development</h5>
+          <p class="card-text">
+            We build modern, scalable, and responsive websites using Django and
+            Bootstrap.
+          </p>
+        </div>
+        <div class="card-footer text-end">
+          <a
+            href="#"
+            class="btn btn-primary btn-sm"
+            >More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 2 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img
+          src="{% static 'image/Graphic.jpg' %}"
+          class="card-img-top"
+          style="object-fit: cover; height: 200px"
+          alt="Service 2"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Graphic Designer</h5>
+          <p class="card-text">
+            We design clean and user-friendly web applications tailored to your
+            needs.
+          </p>
+        </div>
+        <div class="card-footer text-end">
+          <a
+            href="#"
+            class="btn btn-primary btn-sm"
+            >More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 3 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img
+          src="{% static 'image/uix.jpg' %}"
+          class="card-img-top"
+          style="object-fit: cover; height: 200px"
+          alt="Service 3"
+        />
+        <div class="card-body">
+          <h5 class="card-title">UI & UIX Designer</h5>
+          <p class="card-text">
+            Improve your site’s visibility and performance with our SEO and
+            marketing strategies.
+          </p>
+        </div>
+        <div class="card-footer text-end">
+          <a
+            href="#"
+            class="btn btn-primary btn-sm"
+            >More</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

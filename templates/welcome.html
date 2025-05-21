@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load static %}{% block content %}
+<div class="container text-center my-5">
+  <h1 class="display-4">Welcome, {{ user.username }}!</h1>
+  <p class="lead">You have successfully logged in.</p>
+  <img
+    src="{% static 'image/welcome.jpg' %}"
+    class="img-fluid mt-4"
+    alt="Welcome Image"
+    style="max-width: 400px"
+  />
+</div>
+{% endblock %}
